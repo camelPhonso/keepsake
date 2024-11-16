@@ -66,3 +66,16 @@ export default OtherComponent(){
 Now, the two components are decoupled but form a more complex feature. The same logic to prompt a login can be applied in other parts of our app.
 
 Although this is typically a pattern of Functional programming, it also helps us abide by the [[Dependency Inversion Principle|principle of dependency inversion]].
+
+To preserve the existing Types System we can declare the Higher Order Component with the use of generic Types:
+
+```TypeScript
+export default function HigherOrderComponent<T>(
+	// ComponentType is imported from React
+	BaseComponent: ComponentType<T>
+) {
+	return function WrappedComponent(props: T) {
+		// return the new component tsx here
+	}
+}
+```
