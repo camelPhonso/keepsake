@@ -1,4 +1,3 @@
-
 ## Abstract
 
 A suggested structure for projects that is generally implemented alongside [[Domain Driven Design ]] - though [they are different concepts](https://www.youtube.com/watch?v=eUW2CYAT1Nk&ab_channel=AmichaiMantinband) - and aims to help developers avoid Boundary Crossing by visually representing the various concern areas of a product with different Projects within the same Solution.
@@ -18,7 +17,7 @@ Defines the specific implementations of the contracts set in the Infrastructure 
 ### Presentation
 Also sometimes called _WebUI_, this project defines the client-facing layer that will consume the services rendered by the Application project. This project also references the Infrastructure project but solely for the purpose of registration of services in `Program.cs`
 
-**tags:** [[Architecture]] [[Design Principles]]
+**tags:** [[Architecture]] [[Design Principles]] [[.Net]] 
 ## Example
 
 ![Nick Chapsas detailed video explaining Clean Architecture](https://www.youtube.com/watch?v=YiVqwoFMieg&ab_channel=NickChapsas)
