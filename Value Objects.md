@@ -26,7 +26,7 @@ Primitive types do not verify data equality, meaning that that we could pass the
 
 Equally, primitive types do not impose reasonable constraints that our use case may expect. For example, not all strings are a valid email.
 
-[Implementing Value Objects](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects) allows us to strengthen our [[Types System]] by introducing all these constraints.
+[Implementing Value Objects](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects) allows us to strengthen our [[Type Systems|types system]] by introducing all these constraints.
 
 ```CSharp
 public struct User(UserName Name, UserEmail Email);
