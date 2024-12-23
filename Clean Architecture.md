@@ -11,9 +11,9 @@ The simplified setup outlines 4 Projects created within the Solution defined as 
 ### Domain
 Relates to the enterprise-level domain of the codebase. This will typically include, for example, Entity/Model definitions (for projects where EntityframeworkCore is used)
 ### Infrastructure
-Holds the contracts for how the code will interact with the modules defined in the Domain project. This project is dedicated exclusively for **abstractions**
-### Application
 Defines the specific implementations of the contracts set in the Infrastructure project
+### Application
+Holds the contracts for how the code will interact with the modules defined in the Domain project. This project is dedicated exclusively for **abstractions**
 ### Presentation
 Also sometimes called _WebUI_, this project defines the client-facing layer that will consume the services rendered by the Application project. This project also references the Infrastructure project but solely for the purpose of registration of services in `Program.cs`
 
